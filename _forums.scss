@@ -1,0 +1,335 @@
+/* OCR 3 FORUMS STUFF */
+
+/* 
+OverClocked ReMix 4 - OverClocked ReMix 3 ReMix (vBulletin Fix)
+by Douglas "Ramaniscence" Arley
+============================================
+
+Changelog:
+2007-11-01 - Initial launch
+*/
+
+@-moz-document url-prefix(http://ocremix.org/forums/) {
+/* vBulletin 3 CSS For Style 'OverClocked ReMix' (styleid: 2) */
+
+  #logininfo { 
+    right: 10px !important; 
+    top: -15px !important;
+    position: absolute !important;
+  }
+
+  #ocrsearch, .orcsearch {top: -100px !important; position: absolute !important; /* visibility: none !important; */}  
+
+  .tcat {
+    font-weight: bold;
+    text-align:left;
+  }
+
+  td.inlinemod {
+    background: #FFFFCC;
+    color: #000000;
+  }
+
+  .wysiwyg {
+    background: #F5F5FF;
+    color: #000000;
+    font: 10pt Arial, Helvetica, sans-serif;
+  }
+
+  .button { font: 11px Arial, Helvetica, sans-serif; }
+
+  select, option, optgroup, .smallfont, .navbar  { font: 11px Arial, Helvetica, sans-serif; }
+
+  .highlight {
+    color: #FF0000;
+    font-weight: bold;
+  }
+
+  .fjsel {
+    background: #787582;
+    color: #FFFFFF;
+  }
+
+  .fjdpth0 {
+    background: #F7F7F7;
+    color: #000000;
+  }
+
+  .panel {
+    background: #222 none repeat-x top left !important;
+    color: #aaa !important; /* CHANGED */
+    padding: 10px;
+    border: none !important; /* CHANGE (Because it's useless) */
+  }
+
+  .panelsurround { color: #aaa !important; /* CHANGED */ }
+
+  legend {
+    background: #222 !important; /* ADDED */
+    border: 1px solid #000 !important; /* ADDED */
+    font: 11pt Arial, Helvetica, sans-serif;
+  }              
+
+  .vbmenu_control {
+    background: none #e2e3f2 !important; /* PUT-IMAGE-HERE */
+    border-left: 1px solid #a8adce !important; 
+    padding: 3px 6px 3px 6px;
+    white-space: nowrap;
+
+    a { 
+      color: #3f3c75 !important; 
+      &:hover { color: #3f3c75 !important; }
+    }
+  }
+        
+
+  .vbmenu_popup {
+    background: #FFFFFF;
+    color: #000000;
+    border: 1px solid #0B198C;
+  }
+
+  .vbmenu_option {
+    background: #0FF !important;
+    color: #000000;
+    font: 11px Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+
+  .vbmenu_option a:link, .vbmenu_option_alink, .vbmenu_option a:visited, .vbmenu_option_avisited {
+    color: #22229C;
+    text-decoration: none;
+  }
+
+  .vbmenu_option a:hover, .vbmenu_option a:active, .vbmenu_option_ahover{
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+
+  .vbmenu_hilite{
+    background: #8A949E;
+    color: #FFFFFF;
+    font: 11px Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+
+  .vbmenu_hilite a:link, .vbmenu_hilite_alink, .vbmenu_hilite a:visited, .vbmenu_hilite_avisited, .vbmenu_hilite a:hover, .vbmenu_hilite a:active, .vbmenu_hilite_ahover {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+
+  /* ***** styling for 'big' usernames on postbit etc. ***** */
+  .bigusername { font-size: 14pt; }
+
+  /* ***** small padding on 'thead' elements ***** */
+  td.thead, div.thead { padding: 4px; }
+
+  /* ***** basic styles for multi-page nav elements */
+  .pagenav a { text-decoration: none; }
+  .pagenav td { padding: 2px 4px 2px 4px; }
+
+  /* ***** define margin and font-size for elements inside panels ***** */
+  .fieldset { margin-bottom: 6px; }
+  .fieldset, .fieldset td, .fieldset p, .fieldset li { 
+    background: #222 none !important; /* ADDED */
+    border: 1px solid #000 !important; /* ADDED */
+    font-size: 11px; 
+  }
+
+  /* ***** don't change the following ***** */
+  form { display: inline; }
+  label { cursor: default; }
+  .normal { font-weight: normal; }
+  .inlineimg { vertical-align: middle; }
+
+
+  /* =========== MORE STUFF ============ */
+  table.datatable, table.tborder {
+    background: #a8adce !important;
+    border: 1px solid #3f3c75 !important;
+    color: #000 !important;
+    font-size: 85%;
+    margin-bottom: 4px;
+  }
+
+  table.tborder td.vbmenu_control { background-color: #e2e3f2 !important; /* PUT-IMAGE-HERE */}
+
+  table.datatable a, table.datatable a:visited, table.tborder a, table.tborder a:visited {
+    color: #3f3c75 !important; /* CHANGED */
+    text-decoration: none !important;
+  }
+
+  table.datatable a:hover, table.tborder a:hover {
+    text-decoration: underline !important;
+  }
+
+  table.datatable td, table.tborder td {
+    background: none #e2e3f2 !important;
+    border: 0 solid #FFF !important;
+    vertical-align: top;
+  }
+
+  table.datatable td.row2, table.datatable tr.row2 td, table.tborder .alt2, table.tborder .alt2active {
+    background: none #cdcfe9 !important;
+    border: 0px solid #E8E8EA !important;
+  }
+
+  table.datatable td.pagination, table.tborder .tcat {
+    background: none #44497b repeat-x !important; 
+    color: #B0B8F9 !important;
+    font-weight: bold !important;
+  }
+
+  table.datatable td.pagination {
+    text-align: right;
+  }
+
+  table.datatable td.pagination a, .tcat a {
+    color: #4D4E6C;
+    font-weight: bold;
+  }
+
+  table.datatable td.row1:hover {
+    cursor: pointer;
+  }
+
+  table.datatable td.row2, table.datatable tr.row2 td, .alt2, .alt2active {
+    background: none #222 repeat-x !important;
+    border: 1px solid #E8E8EA;
+  }
+
+  table.datatable td.row3, table.datatable tr.row3 td {
+    background: none #222 repeat-x !important;
+    border: 1px solid #E8E8EA;
+  }
+
+  table.datatable tfoot td, table.tborder tfoot td {
+    border: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 2px;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  table.datatable th, table.tborder th, table.tborder .thead {
+    background: url("http://ramaserv.thasauce.net/images/OCRCSS/OCR3-ReMix/forumtitle-bg.png") #4f5486 repeat-x !important;
+    color: #b0b8f9 !important;
+    font-weight: bold;
+    padding-top: 8px !important;
+    height: 25px !important;
+    white-space: nowrap;
+    text-align: center !important;
+  }
+
+  table.datatable th a, 
+  table.datatable th a:visited,
+  table.tborder .thead a,
+  table.tborder .thead a:visited {
+    color: #b0b8f9 !important;
+    text-decoration: none;
+  }
+
+  table.datatable th a:hover,
+  table.tborder td.thead a:hover {
+    color: #FFFFFF;
+    text-decoration: underline !important;
+  }
+
+  table.layout td { vertical-align: top; }
+
+  ul {
+    font-size: 95%;
+    list-style: square;
+  }
+
+  ul ul { font-size: 100%; }
+
+  ul.nav {
+    color: #4D4E6C;
+    font-size: 85%;
+    list-style-type: none;
+    margin-bottom: 2px;
+    margin-left: 20px;
+    margin-top: 2px;
+    padding: 0px;
+  }
+
+  ul.nav a {
+    color: #4D4E6C;
+    text-decoration: none;
+  }
+
+  ul.nav a:hover {
+    color: #DF7500;
+    text-decoration: underline;
+  }
+
+  ul.nav li { vertical-align: middle; }
+
+  ul.nav ul { font-size: 100%; }
+
+  .txt-columntitle-center a {
+    color: #8C8995;
+    text-decoration: none;
+  }
+
+  .txt-columntitle-center a:hover {
+    color: #DF7500;
+    text-decoration: none;
+  }
+
+  .txt-columntitle-left,.txt-columntitle-right {
+    clear: both;
+    color: #8C8995;
+    font-size: 85%;
+    font-weight: bold;
+    padding: 2px 5px;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  .txt-columntitle-right {
+    padding: 2px 5px;
+    text-align: right;
+  }
+
+  .txt-small {
+    color: #4D4E6C;
+    font-size: 85%;
+    text-decoration: none;
+  }
+
+  .txt-small a,.txt-small a:link,.txt-small a:visited {
+    color: #4D4E6C;
+    text-decoration: none;
+  }
+
+  .txt-small a:hover {
+    color: #DF7500;
+    text-decoration: underline;
+  }
+
+/* ============ COMPLETELY NEW ================ */
+  #logininfo { margin-top: 25px; position: absolute; right: 10px !important; }
+
+  input[type="text"], textarea {
+    background: #222 !important;
+    color: #aaa !important;
+    border: 1px solid #aaa !important;
+  }
+
+  input.button { 
+    background: #555 !important;
+    border-top: 1px solid #555 !important;
+    border-left: 1px solid #555 !important;
+    border-bottom: 1px solid #000 !important;
+    border-right: 1px solid #000 !important;
+  }
+
+  td[style="border: 1px inset ;"] { border: 1px solid #000 !important; }
+
+/* === IMAGE REPLACEMENT === */
+}

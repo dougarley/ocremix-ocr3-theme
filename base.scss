@@ -1,0 +1,691 @@
+/* 
+OverClocked ReMix 4 - OCR3 ReMix
+by Douglas "Ramaniscence" Arley
+============================================
+
+TO DO:
+
+============================================
+
+Changelog:
+-2014-05-39 - Code Refactored for Sass
+-2012-02-27 - Removed "WWW" sub-domain prefix
+-2009-06-14 - Merged vBulletin fix into main style
+-2009-06-14 - Updated to work with new OCReMix layout 
+-2005-09-25 - More forum adjustments for 1:1 accuracy w/ OCR3
+-2005-09-25 - Fixed positions for MIXING and STORE tabs
+-2005-09-25 - Alot more forums image replacement
+-2005-09-25 - Added image replacement for: AIM, MSN, WWW, HOME, Y!M, EDIT & QUOTE
+*/
+
+@import 'forums';
+@import 'ads';
+
+@-moz-document domain("ocremix.org") {
+  body {
+    background: url("http://ramaserv.thasauce.net/images/OCRCSS/OCR3-ReMix/logo2.png") #303366 top center no-repeat !important;
+    color: #B0B8F9 !important;
+  }
+
+  h2 {
+    border-bottom: 1px solid #878DDC !important;
+  }
+
+  .left-column {
+    display: none !important;
+  }
+
+  /* ======= Mainstuffs ======= */
+  input, textarea {
+    background: #FFF !important;
+    color: #000 !important;
+    border: 1px solid #000 !important;
+  }
+
+  /* Top-right ad */
+  div.adbanner {
+    visibility: hidden;
+  }
+
+  .middle-column-full {
+    position: relative !important;
+    top: 170px !important;
+    background: #303366 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    min-height: 800px !important;
+    z-index: 0 !important;
+  }
+
+  div.panel-2-white {
+    background: #252850 !important;
+  }
+
+  div.panel-2-gray {
+    background: none !important;
+  }
+
+  #footer {
+    background: none !important;
+//    margin-top: 200px;
+  }
+
+  .menu {
+    position: absolute !important;
+    left: 690px !important;
+    top: 230px !important;
+  }
+
+  .middle-column h1 {
+    display: none !important;
+  } 
+
+  /* === TABS === */
+  div.tabs {
+    background: #303366 !important;
+    border-bottom: 1px solid #878DDC !important;
+//    font-size: 85%;
+//    font-weight: bold;
+//    height: 21px;
+//    margin-bottom: 5px;
+    padding-top: 25px !important;
+//    vertical-align: top;
+//    width: 100%;
+
+    div {
+//      clear: none;
+//      float: left;
+//      vertical-align: top;
+    }
+    
+    div.highlight {
+      background: #252850 !important;
+      border-top: 1px solid #878DDC !important;
+      border-left: 1px solid #878DDC !important;
+      border-right: 1px solid #878DDC !important;
+//      height: 18px;
+//      margin: 0px;
+//      padding-left: 10px;
+//      padding-right: 10px;
+//      padding-top: 1px;
+      a {
+          &:link, &:visited, &:hover { color: #878DDC !important; }
+      }
+    }
+
+    div.highlight-end {
+//        background: #303366 !important;
+//        height: 17px;
+//        margin: 0px;
+//        width: 26px;
+    }
+
+    div.highlight-right {
+        background: #303366 !important;
+//      height: 17px;
+//      margin: 0px;
+//      width: 26px;
+    }
+
+    div.regular {
+      a {
+        &:link, &:visited, &:hover { color: #878DDC!important; }
+      }
+    }
+    
+    div.regular-end, div.regular-right {
+      background: #303366 !important;
+//    height: 17px;
+//    margin: 0px;
+//    width: 23px;
+    }
+
+    div.regular-right {
+//    background: #303366 !important;
+//    height: 17px;
+//    margin: 0px;
+//    width: 26px;
+    }
+  }
+
+  /* Links - #f80 (old) */
+  .middle-column {
+    a {
+      &:link, &:active, &:visited { color: #878DDC !important; }
+    }
+  }
+
+  /* Links in paragraphs */
+  p {
+    a, a:active, a:visited {
+      color: #878DDC !important;
+    }
+  }
+
+  /* Links in lists */
+  ul {
+    a, a:active, a:visited {
+     color: #859CFA !important;
+    }
+  }
+
+  /* "home >> welcome" */
+  div.breadcrumb {
+    color: #B0B8F9 !important;
+    left: 10px !important;
+    top: 0px !important;
+    
+    a, a:link, a:visited {
+      color: #878DDC !important;
+    }
+  }
+
+  /* Right-side stuff */
+  div.datalist1-content { 
+    a, a:hover {
+      color: #878DDC !important;
+    }
+    
+    h2 {
+      color: #B0B8F9 !important;
+    }
+  }
+
+  /* Forums/Ormgas/Spotlight Etc. */
+  div.item-body {
+    background-color: #252850 !important;
+    background-repeat: repeat-x !important;
+    background-image: none !important;
+    border: 1px solid #252850 !important;
+//  border: 1px solid #555 !important; */;
+  }
+
+  /* See Above */
+  div.item-container {
+    background-color: #252850 !important;
+    background-image: none !important;
+    border: 1px solid #878DDC !important;
+    color: #B0B8F9 !important;
+  }
+
+  /* See Above */
+  div.item-header {
+    background-color: #252850 !important;
+    background-repeat: repeat-x !important;
+    background-image: none !important;
+//  background-image: url(http://ramaserv.thasauce.net/images/OCRCSS/OCR4-Contrast/item-header-bg.png) !important; */
+    color: #B0B8F9 !important;
+  }
+
+  /* See Above */
+  div.item-header {
+    a, a:visited {
+      color: #859CFA !important;
+    }
+  }
+
+  /* Sidebar item Titles */
+  div.itemtitle-left {
+//  background: url(/images/template/tpl_left_column_divider.jpg) #000 no-repeat right !important; */
+    background-image: none !important;
+    background-color: #222 !important;
+    color: #fff !important;
+  }
+  /* Mix-Side item titles */
+
+  div.itemtitle-right {
+    color: #B0B8F9 !important;
+  }
+
+  div.itemtitle-left, div.itemtitle-right {
+    a, a:visited { color: #fff !important; }
+    a:hover { color: #878DDC !important; };
+  }
+
+  /* Mix-Side Dividers */
+  div.itemtitle-right-list {
+    border-bottom: 1px solid #878DDC !important;
+  }
+
+
+  div.main-content { 
+    p {
+      color: #B0B8F9 !important;
+    }
+  }
+
+  div.main-content h2, .txt-header2 {
+    color: #B0B8F9 !important;
+    a, a:link, a:visited { color: #878DDC !important; }
+  }
+
+  /* Mix-sode Background + left Border */
+
+  div.right-column {
+    position: absolute !important;
+    top: 195px !important;
+    margin-left: 500px !important;
+//  border-left: 1px solid #555 !important; */;
+    img {
+        border: 1px solid #878DDC !important;
+    }
+  }
+
+  /* Welcome to www.ocremix.org */
+
+//  h1 { visibility: hidden; }
+
+  h1, h1 a, h1 a:hover { color: #B0B8F9 !important; }
+
+  /* Sidebar Navigation */
+  ul.nav { 
+    color: #B0B8F9 !important;
+    
+    a {
+      color: #859CFA !important;
+    }
+  }
+
+  div.center span {
+    color: #B0B8F9 !important;
+    font-weight: bold !important;
+  }
+
+  /* OCR Logo */
+  img.header {
+    visibility: hidden;
+    height: 0px !important;
+    width: 0px !important;
+//  left: 0;
+    position: absolute;
+    top: 94px;
+  }
+
+  /* OCR Mascot */
+  img.mascot {
+    visibility: hidden;
+    height: 0px !important;
+    width: 0px !important;
+//  position: absolute;
+//  right: 0px;
+//  top: 114px;
+  }
+
+  /* Position of Main site */
+  div.main-content { top: 200px !important; }
+
+  /* Alphabet nav - Size/Position */
+  div.alphanav {
+    position: absolute !important;
+    top: 230px !important;
+    left: 5px !important;
+    margin: auto !important;
+    text-align: center !important;
+    padding-top: 120px !important;
+    font-size: 150% !important;
+    background-color: #252850 !important;
+    border: 1px solid #878DDC !important;
+    z-index: 2 !important;
+    text-transform: uppercase;
+  }
+
+  div.alphanav {
+    a, a:active, a:visited {
+      color: #878DDC !important;
+    }
+  }
+
+  /* RSS feeds and Custom Mascots */
+  div.formats {
+    position: absolute !important;
+    top: 245px !important;
+    left: 0px !important;
+    right: 0px !important;
+    margin: auto !important;
+    width: 100% !important;
+    z-index: 3 !important;
+    text-align: center !important;
+  }
+
+  // ==================================================================
+  /* Front Page Image Replacements */
+  img {
+    &[src="/images/template/feed_icon.png"] {
+      background: url("http://ramaserv.thasauce.net/images/OCRCSS/OCR4-Contrast/ads/sig.php") transparent no-repeat top left !important;
+      padding-left: 400px !important;
+      width: 0 !important;
+      height: 100px !important;
+    }
+    &[src="/images/template/xml_icon.png"] { display: none !important; }
+  }
+
+  #ocrsearch {
+    position: absolute !important;
+    top: 400px !important;
+    right: 150px !important;
+    z-index: 3 !important;
+  }
+
+  .txt-small {
+    color: #B0B8F9 !important;
+  }
+
+  a.txt-small {
+    &:link, &:active, &:visited { color: #878DDC !important; }
+    &:hover { text-decoration: underline !important; }
+  }
+
+/* ======= Forums ======= */
+
+  /* Image Replacement */
+  img {
+    &[src^="templates/ocr/images/lang_english/"]{
+      width: 0 !important; 
+    }
+
+    /* Post / Reply */
+    &[src="templates/ocr/images/lang_english/post.gif"], &[src="templates/ocr/images/lang_english/reply.gif"] {
+      height: 25px !important;
+      padding-left: 91px !important;
+    }
+
+    &[src="templates/ocr/images/lang_english/post.gif"] {
+      background: url("http://ramaserv.thasauce.net/images/OCRCSS/OCR3-ReMix/post.gif") top left no-repeat !important;
+    }
+
+    &[src="templates/ocr/images/lang_english/reply.gif"] {
+      background: url("http://ramaserv.thasauce.net/images/OCRCSS/OCR3-ReMix/reply.gif") top left no-repeat !important;
+
+    }
+
+    /* Chat Icons */
+    &[src^="templates/ocr/images/lang_english/icon_"] {
+      height: 20px !important;
+      padding-left: 57px !important;  
+    }
+
+    &[src$="icon_profile.gif"] {
+      background: url("http://ramaserv.thasauce.net/images/OCRCSS/OCR3-ReMix/icon_profile.gif") top left no-repeat !important;
+    }
+
+    &[src$="icon_pm.gif"] {
+      background: url("http://ramaserv.thasauce.net/images/OCRCSS/OCR3-ReMix/icon_pm.gif") top left no-repeat !important;
+    }
+
+    &[src$="icon_www.gif"] {
+      background: url("http://ramaserv.thasauce.net/images/OCRCSS/OCR3-ReMix/icon_www.gif") top left no-repeat !important;
+    }
+
+    &[src$="icon_aim.gif"] {
+      background: url("http://ramaserv.thasauce.net/images/OCRCSS/OCR3-ReMix/icon_aim.gif") top left no-repeat !important;
+    }
+
+    &[src$="icon_msnm.gif"] {
+      background: url("http://ramaserv.thasauce.net/images/OCRCSS/OCR3-ReMix/icon_msnm.gif") top left no-repeat !important;
+    }
+
+    &[src$="icon_icq_add.gif"] {
+      background: url("http://ramaserv.thasauce.net/images/OCRCSS/OCR3-ReMix/icon_icq.gif") top left no-repeat !important;
+    }
+
+    &[src$="icon_email.gif"] {
+      background: url("http://ramaserv.thasauce.net/images/OCRCSS/OCR3-ReMix/icon_email.gif") top left no-repeat !important;
+    }
+
+    &[src$="icon_yim.gif"] {
+      background: url("http://ramaserv.thasauce.net/images/OCRCSS/OCR3-ReMix/icon_yim.gif") top left no-repeat !important;
+    }
+
+    /* Quote / Edit Icons */
+    &[src$="icon_quote.gif"] {
+      background: url("http://ramaserv.thasauce.net/images/OCRCSS/OCR3-ReMix/icon_quote.gif") top left no-repeat !important;
+    }
+
+    &[src$="icon_edit.gif"] {
+      background: url("http://ramaserv.thasauce.net/images/OCRCSS/OCR3-ReMix/icon_edit.gif") top left no-repeat !important;
+    }
+
+    /* Folders */
+    &[src^="templates/ocr/images/folder"] {
+      height: 18px !important; 
+      padding-left: 19px !important;
+    }
+
+    &[src$="folder_new.gif"] {
+      background: url("http://ramaserv.thasauce.net/images/OCRCSS/OCR3-ReMix/folder_new.png") top left no-repeat !important;
+    }
+
+    &[src$="folder.gif"] {
+      background: url("http://ramaserv.thasauce.net/images/OCRCSS/OCR3-ReMix/folder.png") top left no-repeat !important;
+    }
+
+    &[src$="folder_new_hot.gif"] {
+      background: url("http://ramaserv.thasauce.net/images/OCRCSS/OCR3-ReMix/folder_new_hot.png") top left no-repeat !important;
+    }
+
+    &[src$="folder_hot.gif"] {
+      background: url("http://ramaserv.thasauce.net/images/OCRCSS/OCR3-ReMix/folder_hot.png") top left no-repeat !important;
+    }
+    
+    /* Big Folders */
+    &[src$="folder_new_big.gif"], &[src$="folder_big.gif"] {
+      height: 25px !important; 
+      padding-left: 46px !important;
+    }
+
+    &[src$="folder_new_big.gif"] {
+      background: url("http://ramaserv.thasauce.net/images/OCRCSS/OCR3-ReMix/folder_new_big.png") top left no-repeat !important;
+    }
+
+    &[src$="folder_big.gif"] {
+      background: url("http://ramaserv.thasauce.net/images/OCRCSS/OCR3-ReMix/folder_big.png") top left no-repeat !important;
+    }
+  }
+
+  div.forums {
+    font-family: Verdana, Arial, Helvetica, sans-serif !important;
+    margin-top: 250px !important;
+  }
+
+  div.div-forums-nav {
+    font-family: Verdana, Arial, Helvetica, sans-serif !important;
+    color: #B0B8F9 !important;
+    text-align: center !important;
+    position: absolute !important;
+    top: 250px !important;
+    left: 0 !important;
+    width: 100% !important;
+
+    a, a:active, a:visited { color: #B0B8F9 !important; }
+  }
+
+  table.forumborder {
+    background-color: #A8ADCE !important;
+    border: 1px solid #3F3C75 !important;
+
+    tr { background-color: transparent !important; }
+  }
+
+  .gen2 { font-family: Verdana, Arial, Helvetica, sans-serif !important; }
+
+  td.row1, td.row2, td.row3 { 
+    font-size: 80% !important;
+    background-image: none !important;
+    color: #000 !important;
+    font-family: Verdana, Arial, Helvetica, sans-serif !important;
+
+    a, a:active, a:visited, a:hover { color: #3F3C75 !important; }
+  }
+
+  td.row1 { 
+    background-color: #e2e3f2 !important;
+    
+    &[nowrap="nowrap"] a { 
+      text-decoration: underline !important;
+      &:hover { text-decoration: none !important; }
+    }
+  }
+
+  td.row2 .gensmall a { color: #3F3C75 !important; text-decoration: underline !important; }
+
+  td.row2, td.row3 { background-color: #cdcfe9 !important; }
+
+  td.row3 {
+    a {
+      &:link, &:active, &:visited  { text-decoration: underline !important; }
+      &:hover { text-decoration: none !important; }
+    }
+  }
+
+  th.menu {
+    font-family: Verdana, Arial, Helvetica, sans-serif !important;
+    text-align: center !important;
+    background-image: none !important;
+    background-color: #626799 !important;
+    color: #B0B8E9 !important;
+  }
+
+  span.postbody {
+    color: #000 !important;
+//  background-color: transparent !important; */
+    font-family: Verdana, Arial, Helvetica, sans-serif !important;
+
+    a, a:active, a:visited, a:hover {
+      color: #3F3C75 !important;
+      text-decoration: underline !important;
+    }
+  }
+
+  .quote {
+    background: #fff !important;
+    color: #000 !important;
+    border: 1px solid #000 !important;
+    font-family: Verdana, Arial, Helvetica, sans-serif !important;
+  }
+
+  .genmed { font-family: Verdana, Arial, Helvetica, sans-serif !important; color: #000 !important;}
+
+  td.menu {
+    background-image: none !important;
+    background-color: #C0C3E6 !important;
+    color: #000 !important;
+    font-family: Verdana, Arial, Helvetica, sans-serif !important;
+    size: 8pt !important;
+  }
+
+  th.forumtitle, td.forumtitle, td.menu {
+    background: url("http://ramaserv.thasauce.net/images/OCRCSS/OCR3-ReMix/forumtitle-bg.png") #4F5486 repeat-x !important;
+    color: #B0B8F9 !important;
+    font-family: Verdana, Arial, Helvetica, sans-serif !important;
+    height: 25px !important;
+  }
+
+  th.forumtitle font[color="white"] { color: #B0B8F9 !important; }
+
+  .forumtitle span.nav a,
+  .forumtitle span.nav a:active,
+  .forumtitle span.nav a:visited {
+    color: #B0B8F9 !important;
+  }
+
+  tr > .rowtitles { 
+    height: 34px !important; 
+  }
+
+  td.rowtitles {
+    background: url("http://ramaserv.thasauce.net/images/OCRCSS/OCR3-ReMix/rowtitle-bg.png") #C0C3E6 repeat-x !important;
+    color: #B0B8F9 !important;
+    font-family: Verdana, Arial, Helvetica, sans-serif !important;
+  }
+  .cattitle {
+    color: #3b4281 !important; 
+    font-size: 12px !important;
+    margin-top: 10px !important;
+    border: #a8adce 1px solid !important;
+    padding: 3px !important;
+    line-height: 100% !important; 
+    font-weight: bold !important; 
+    letter-spacing: 2px !important; 
+    text-decoration: none !important;
+    background-color: #cdcfe9 !important; 
+  }
+
+  .icon { 
+    background-image: none !important;
+    background-color: #E2E3F2 !important;
+    color: #B0B8F9 !important;
+  }
+
+  .code { background: #fff !important; }
+
+  span.gensmall { color: #000 !important; }
+  span.gensmall a { color: #B0B8F9 !important; text-decoration: none !important; }
+  span.gensmall a:hover { color: #B0B8F9 !important; text-decoration: underline !important; }
+
+/* ======= Mixer & Alphabetical Organization Pages ======= */
+
+  .datatable {
+    background-image: none !important;
+    background-color: #000 !important;
+    border: 1px solid #a60 !important;
+    
+    th { background: url("http://ramaserv.thasauce.net/images/OCRCSS/OCR4-Contrast/item-header-bg.png") #333 repeat-x !important; }
+    td {
+      background-image: none !important;
+      background-color: #222 !important;
+      color: #B0B8F9 !important;
+      border-top: 1px solid #333 !important;
+      border-left: 1px solid #333 !important;
+      border-bottom: 1px solid #111 !important;
+      border-right: 1px solid #111 !important;
+
+      &.pagination {
+        background-image: none !important;
+        background-repeat: repeat-x !important;
+        background-color: #000 !important; 
+      }
+
+      a, a:active, a:visited { color: #878DDC !important; }
+    }
+  }
+
+  .left-column { display:none !important; }
+
+  div.middle-column { margin: 10px 0px 0px 145px !important; }
+  div.middle-column-extended { margin: 10px 10px 0px 10px !important; }
+
+  div.breadcrumb { left: 10px !important; top: -180px !important; color: #aaa !important; }
+
+  .panel-white-tl, .panel-white-tr, .panel-white-br, .panel-white-bl, .panel-white-inside, .tab-container,
+  .panel-gray-tl, .panel-gray-tr, .panel-gray-br, .panel-gray-bl, .panel-gray-inside, .tab-container { background: none !important; }
+
+  .color-bodytext a { color: #878DDC !important; }
+
+  .middle-column-extended { position: relative !important; top: 175px !important; }
+
+  #ocrsearch { margin-top: -200px !important; margin-right: -128px !important; }
+
+  a[href="http://www.facebook.com/group.php?gid=2210239078"] { margin-left: 50px !important; }
+
+  div.tab-panel-footer { display: none !important; }
+
+} // domain("ocremix.org") END
+
+@-moz-document url-prefix(http://ocremix.org/mixing/) {
+  div.tabs { margin-top: 155px !important; left: 10px !important; position: absolute !important; }
+  table[cellpadding="3"] { margin-top: 200px !important; left: 15px !important; position: absolute !important; }
+  div[align="center"] { display: none !important; }
+  p { display: none !important }
+}
+
+@-moz-document url-prefix(http://ocremix.org/store/) {
+  div.tabs { margin-top: 155px !important; left: 10px !important; position: absolute !important; }
+  table[cellpadding="3"] { margin-top: 200px !important; left: 15px !important; position: absolute !important; }
+  div[align="center"] { display: none !important; }
+  p { display: none !important }
+}
+
+@-moz-document url-prefix(http://ocremix.org/remix/) {
+  /* Hide Amazon Ad on Mix page */
+  iframe[height="600"] { display: none !important; }
+}

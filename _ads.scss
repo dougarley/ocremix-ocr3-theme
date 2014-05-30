@@ -1,0 +1,58 @@
+/* 
+
+OverClocked ReMix - General Ad-Cleaning
+by Douglas "Ramaniscence" Arley
+============================================
+*/
+
+@-moz-document url-prefix(http://ocremix.org/) {
+
+/* === GENERAL AD REMOVAL === */
+
+  /* Remove Center ad */
+  table.layout td[width="125"] { display: none !important; }
+
+  /* Remove mix write-up ad */
+  div#panel-writeup div { display: none !important; }
+
+  input[type="text"], textarea {
+    background: #FFF !important;
+    color: #000 !important;
+    border: 1px solid #000 !important;
+  }
+
+  /* === Main Page Image Replacement === */
+  img {
+    &[src^="/images/projects/"] { 
+      width: 0 !important;
+      height: 100px !important; 
+      padding-left: 100px !important;
+      border: 1px solid #878DDC !important;
+    }
+    
+    /* BotA / RoFL ALT IMAGE */
+    &[src$="album_blood_on_the_asphalt_125.jpg"] {
+      background: url("http://ramaserv.thasauce.net/images/OCRCSS/OCR4-Contrast/RoFL.png") #000 top left no-repeat !important;
+    }
+
+    /* CS / RotC ALT IMAGE */
+    &[src$="album_chrono_symphonic_125.jpg"] {
+      background: url("http://ramaserv.thasauce.net/images/OCRCSS/OCR4-Contrast/rotc-alt.png") #000 top left no-repeat !important;
+    }
+
+    /* Dark Side of Phobos ALT IMAGE */
+    &[src$="album_dark_side_of_phobos_125.jpg"] {
+      background: url("http://ramaserv.thasauce.net/images/OCRCSS/OCR4-Contrast/DSoP-alt.png") #000 top left no-repeat !important;
+    }
+
+    /* RotS / KiC ALT */
+    &[src$="album_rise_of_the_star_125.jpg"] {
+      background: url("http://ramaserv.thasauce.net/images/OCRCSS/OCR4-Contrast/kic-alt.png") #000 top left no-repeat !important;
+    }
+
+    /* VGLive HIDE */
+    &[src$="videogameslive_125.jpg"], &[src$="chipamp_125.jpg"] {
+      display: none !important;
+    }
+  }
+}
